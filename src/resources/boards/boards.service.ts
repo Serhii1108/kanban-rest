@@ -39,6 +39,7 @@ export class BoardsService {
         'tasks.title',
         'tasks.order',
         'tasks.description',
+        'tasks.priority',
         'tasks.userId',
         'files.filename',
         'files.fileSize',

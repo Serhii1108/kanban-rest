@@ -17,6 +17,11 @@ export class UpdateTaskDto {
   @IsNotEmpty()
   readonly description!: string;
 
+  @ApiProperty({ example: '1', description: 'Task priority' })
+  @IsNumber()
+  @IsNotEmpty()
+  readonly priority!: number;
+
   @ApiProperty({ example: '40af606c-c0bb-47d1-bc20-a2857242cde3', description: 'ID of the User who owns the Task' })
   @IsString()
   @ValidateIf((object, value) => value !== null)

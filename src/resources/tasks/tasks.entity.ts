@@ -20,6 +20,7 @@ export interface ITask {
   title: string;
   order: number;
   description: string;
+  priority: number;
   userId: string | null;
   board: string;
   boardId: string | null;
@@ -48,6 +49,11 @@ export class Task extends BaseEntity {
   @ApiProperty({ example: 'Domestic cat needs to be stroked gently', description: 'Task description' })
   @ColumnPg()
   description!: string;
+
+  /** @public task priority */
+  @ApiProperty({ example: '1', description: 'Task priority' })
+  @ColumnPg()
+  priority!: number;
 
   /** @public user uuid */
   @ManyToOne(() => User, (user) => user.tasks, { onDelete: 'SET NULL', onUpdate: 'CASCADE' })

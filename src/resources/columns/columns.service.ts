@@ -43,6 +43,7 @@ export class ColumnsService {
         'tasks.title',
         'tasks.order',
         'tasks.description',
+        'tasks.priority',
         'tasks.userId',
         'files.filename',
         'files.fileSize',

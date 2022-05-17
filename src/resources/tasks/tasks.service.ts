@@ -30,6 +30,7 @@ export class TasksService {
         'tasks.title',
         'tasks.order',
         'tasks.description',
+        'tasks.priority',
         'tasks.userId',
         'tasks.boardId',
         'tasks.columnId',
@@ -52,6 +53,7 @@ export class TasksService {
         'tasks.title',
         'tasks.order',
         'tasks.description',
+        'tasks.priority',
         'tasks.userId',
         'tasks.boardId',
         'tasks.columnId',
@@ -94,6 +96,7 @@ export class TasksService {
     task.title = body.title;
     task.order = body.order;
     task.description = body.description;
+    task.priority = body.priority;
     task.userId = body.userId;
     task.boardId = body.boardId;
     task.columnId = body.columnId;
