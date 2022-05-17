@@ -41,6 +41,9 @@ export default {
                 description: {
                   example: 'Domestic cat needs to be stroked gently',
                 },
+                priority: {
+                  example: 1,
+                },
                 userId: {
                   example: 'b2d92061-7d23-4641-af52-dd39f95b99f8',
                 },
